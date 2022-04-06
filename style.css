@@ -1,0 +1,211 @@
+/*IMPORT FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+/*---------------------------------------*/
+/*CENTRALIZANDO QUADRADO*/
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: #07f777;
+}
+
+.main-content .wrapping {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+/*---------------------------------------*/
+/*CONTENT LEFT-SIDE*/
+.main-content .container {
+  display: flex;
+  background-color: #030923;
+  width: 55rem;
+  height: 35rem;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.main-content .container .aside-container {
+  width: 50%;
+  height: 100%;
+  color: #07f777;
+  flex-direction: column;
+}
+.aside-container .letter-content {
+  width: 100%;
+  height: 15%;
+}
+
+.aside-container .image-content {
+  width: 100%;
+  height: 85%;
+}
+.aside-container .image-content img {
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------------------------*/
+/* CONTENT RIGHT-SIDE*/
+
+.right .login {
+  width: 300px;
+  height: 400px;
+  background-color: #1f212b;
+  padding: 15px;
+  border-radius: 20px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.right .login h1 {
+  color: #07f777;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  color: rgb(194, 177, 177);
+}
+
+.login input {
+  background-color: #161923;
+  color: #fff;
+  width: 90%;
+  height: 32px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.login button {
+  background-color: #07f777;
+  border-radius: 25px;
+  margin-top: 30px;
+  border: none;
+  width: 90%;
+  height: 40px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b454;
+}
+
+a {
+  color: #030923;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/*RODAPE*/
+.wrapping-footer {
+  width: 100%;
+  height: 15%;
+}
+.rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #030923;
+}
+.rodape span {
+  color: rgb(187, 176, 176);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  color: rgb(187, 176, 176);
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: initial;
+}
+
+.redes {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  height: 10px;
+}
+.redes a {
+  color: rgb(187, 176, 176);
+  font-size: 12px;
+  padding-left: 10px;
+}
+.redes img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+/*MEDIA QUERIES*/
+/*---------------------------*/
+
+@media only screen and (max-width: 1101px) {
+  .main-content .container {
+    width: 880px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .main-content .container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    flex-direction: column;
+    border-radius: 0;
+    align-items: center;
+    background-image: url(assets/astronauta.jpg);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+  }
+  .right {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-content .container .aside-container {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 0;
+  }
+
+  .aside-container .letter-content h1 {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .aside-container .image-content {
+    display: none;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .wrapping-footer {
+    display: none;
+  }
+  .main-content {
+    background-color: #030923;
+  }
+}
