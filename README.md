@@ -7,5 +7,5 @@
 <img src ="/assets/mokadesk.jpg" width="700px"><br>
 
 ## Tela Mobile:
-<img src ="/assets/astromobile.jpg" width="700px">
+<img src ="/assets/astromobile.jpg">
 <img src ="/assets/mokamobile.jpg " width="700px">
